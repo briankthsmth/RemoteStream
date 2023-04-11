@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D32E8F35263DF63900F147BD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADEA1C262CCFB90017CF8C /* libc++.tbd */; platformFilter = ios; };
+		D32E8F38263DF64500F147BD /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADEA1D262CCFD10017CF8C /* libiconv.tbd */; platformFilter = ios; };
+		D32E8F3B263DF65400F147BD /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADEA1E262CCFDE0017CF8C /* libresolv.tbd */; platformFilter = ios; };
+		D32E8F5E263E0ACF00F147BD /* RemoteStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E8F5C263E0ACF00F147BD /* RemoteStreamView.swift */; };
+		D32E8F5F263E0ACF00F147BD /* VideoControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E8F5D263E0ACF00F147BD /* VideoControlView.swift */; };
+		D32E8F64263E0B5000F147BD /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D32E8F63263E0B5000F147BD /* Shaders.metal */; };
+		D354668826935947002BB21B /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D354668726935947002BB21B /* ConnectionView.swift */; };
+		D354668A26935953002BB21B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D354668926935953002BB21B /* Connection.swift */; };
+		D362FC0A2659B065007E0860 /* ShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D362FC092659A4D5007E0860 /* ShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3ADE9F4262B92500017CF8C /* RemoteStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADE9EA262B92500017CF8C /* RemoteStream.framework */; };
+		D3ADE9FB262B92510017CF8C /* RemoteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D3ADE9ED262B92500017CF8C /* RemoteStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3ADEA10262C7F210017CF8C /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ADEA0A262C7F200017CF8C /* gst_ios_init.m */; platformFilter = ios; };
+		D3ADEA11262C7F210017CF8C /* RemoteStreamAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3ADEA0B262C7F210017CF8C /* RemoteStreamAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3ADEA12262C7F210017CF8C /* RemoteStreamControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADEA0C262C7F210017CF8C /* RemoteStreamControl.swift */; };
+		D3ADEA13262C7F210017CF8C /* gst_ios_init.h in Headers */ = {isa = PBXBuildFile; fileRef = D3ADEA0D262C7F210017CF8C /* gst_ios_init.h */; platformFilter = ios; };
+		D3ADEA14262C7F210017CF8C /* RemoteStreamAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ADEA0E262C7F210017CF8C /* RemoteStreamAdapter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3ADE9F5262B92500017CF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3ADE9E1262B92500017CF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3ADE9E9262B92500017CF8C;
+			remoteInfo = LiveVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D32E8F5C263E0ACF00F147BD /* RemoteStreamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStreamView.swift; sourceTree = "<group>"; };
+		D32E8F5D263E0ACF00F147BD /* VideoControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoControlView.swift; sourceTree = "<group>"; };
+		D32E8F63263E0B5000F147BD /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		D354668726935947002BB21B /* ConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		D354668926935953002BB21B /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		D362FC092659A4D5007E0860 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		D3ADE9EA262B92500017CF8C /* RemoteStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3ADE9ED262B92500017CF8C /* RemoteStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteStream.h; sourceTree = "<group>"; };
+		D3ADE9EE262B92500017CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ADE9F3262B92500017CF8C /* RemoteStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3ADE9FA262B92510017CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ADEA0A262C7F200017CF8C /* gst_ios_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
+		D3ADEA0B262C7F210017CF8C /* RemoteStreamAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteStreamAdapter.h; sourceTree = "<group>"; };
+		D3ADEA0C262C7F210017CF8C /* RemoteStreamControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStreamControl.swift; sourceTree = "<group>"; };
+		D3ADEA0D262C7F210017CF8C /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
+		D3ADEA0E262C7F210017CF8C /* RemoteStreamAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteStreamAdapter.m; sourceTree = "<group>"; };
+		D3ADEA1C262CCFB90017CF8C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		D3ADEA1D262CCFD10017CF8C /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		D3ADEA1E262CCFDE0017CF8C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3ADE9E7262B92500017CF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32E8F38263DF64500F147BD /* libiconv.tbd in Frameworks */,
+				D32E8F35263DF63900F147BD /* libc++.tbd in Frameworks */,
+				D32E8F3B263DF65400F147BD /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ADE9F0262B92500017CF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ADE9F4262B92500017CF8C /* RemoteStream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D32E8F3E263DF92F00F147BD /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADEA0D262C7F210017CF8C /* gst_ios_init.h */,
+				D3ADEA0A262C7F200017CF8C /* gst_ios_init.m */,
+				D3ADEA0B262C7F210017CF8C /* RemoteStreamAdapter.h */,
+				D3ADEA0E262C7F210017CF8C /* RemoteStreamAdapter.m */,
+				D3ADE9ED262B92500017CF8C /* RemoteStream.h */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		D32E8F62263E0B3700F147BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D32E8F63263E0B5000F147BD /* Shaders.metal */,
+				D362FC092659A4D5007E0860 /* ShaderTypes.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D35466852693591C002BB21B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D354668726935947002BB21B /* ConnectionView.swift */,
+				D32E8F5C263E0ACF00F147BD /* RemoteStreamView.swift */,
+				D32E8F5D263E0ACF00F147BD /* VideoControlView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D354668626935923002BB21B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D354668926935953002BB21B /* Connection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D354668B26935A2D002BB21B /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADEA0C262C7F210017CF8C /* RemoteStreamControl.swift */,
+			);
+			path = Streaming;
+			sourceTree = "<group>";
+		};
+		D3ADE9E0262B92500017CF8C = {
+			isa = PBXGroup;
+			children = (
+				D3ADEA1B262CCFB80017CF8C /* Frameworks */,
+				D3ADE9EC262B92500017CF8C /* RemoteStream */,
+				D3ADE9F7262B92500017CF8C /* RemoteStreamTests */,
+				D3ADE9EB262B92500017CF8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3ADE9EB262B92500017CF8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE9EA262B92500017CF8C /* RemoteStream.framework */,
+				D3ADE9F3262B92500017CF8C /* RemoteStreamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3ADE9EC262B92500017CF8C /* RemoteStream */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE9EE262B92500017CF8C /* Info.plist */,
+				D354668626935923002BB21B /* Model */,
+				D32E8F3E263DF92F00F147BD /* ObjC */,
+				D32E8F62263E0B3700F147BD /* Resources */,
+				D354668B26935A2D002BB21B /* Streaming */,
+				D35466852693591C002BB21B /* UI */,
+			);
+			path = RemoteStream;
+			sourceTree = "<group>";
+		};
+		D3ADE9F7262B92500017CF8C /* RemoteStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE9FA262B92510017CF8C /* Info.plist */,
+			);
+			path = RemoteStreamTests;
+			sourceTree = "<group>";
+		};
+		D3ADEA1B262CCFB80017CF8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADEA1E262CCFDE0017CF8C /* libresolv.tbd */,
+				D3ADEA1D262CCFD10017CF8C /* libiconv.tbd */,
+				D3ADEA1C262CCFB90017CF8C /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D3ADE9E5262B92500017CF8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ADEA11262C7F210017CF8C /* RemoteStreamAdapter.h in Headers */,
+				D3ADEA13262C7F210017CF8C /* gst_ios_init.h in Headers */,
+				D3ADE9FB262B92510017CF8C /* RemoteStream.h in Headers */,
+				D362FC0A2659B065007E0860 /* ShaderTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D3ADE9E9262B92500017CF8C /* RemoteStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ADE9FE262B92510017CF8C /* Build configuration list for PBXNativeTarget "RemoteStream" */;
+			buildPhases = (
+				D3ADE9E5262B92500017CF8C /* Headers */,
+				D3ADE9E6262B92500017CF8C /* Sources */,
+				D3ADE9E7262B92500017CF8C /* Frameworks */,
+				D3ADE9E8262B92500017CF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteStream;
+			productName = LiveVideo;
+			productReference = D3ADE9EA262B92500017CF8C /* RemoteStream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3ADE9F2262B92500017CF8C /* RemoteStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ADEA01262B92510017CF8C /* Build configuration list for PBXNativeTarget "RemoteStreamTests" */;
+			buildPhases = (
+				D3ADE9EF262B92500017CF8C /* Sources */,
+				D3ADE9F0262B92500017CF8C /* Frameworks */,
+				D3ADE9F1262B92500017CF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3ADE9F6262B92500017CF8C /* PBXTargetDependency */,
+			);
+			name = RemoteStreamTests;
+			productName = LiveVideoTests;
+			productReference = D3ADE9F3262B92500017CF8C /* RemoteStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3ADE9E1262B92500017CF8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D3ADE9E9262B92500017CF8C = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					D3ADE9F2262B92500017CF8C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = D3ADE9E4262B92500017CF8C /* Build configuration list for PBXProject "RemoteStream" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3ADE9E0262B92500017CF8C;
+			productRefGroup = D3ADE9EB262B92500017CF8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3ADE9E9262B92500017CF8C /* RemoteStream */,
+				D3ADE9F2262B92500017CF8C /* RemoteStreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3ADE9E8262B92500017CF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ADE9F1262B92500017CF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3ADE9E6262B92500017CF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32E8F64263E0B5000F147BD /* Shaders.metal in Sources */,
+				D32E8F5E263E0ACF00F147BD /* RemoteStreamView.swift in Sources */,
+				D32E8F5F263E0ACF00F147BD /* VideoControlView.swift in Sources */,
+				D354668A26935953002BB21B /* Connection.swift in Sources */,
+				D354668826935947002BB21B /* ConnectionView.swift in Sources */,
+				D3ADEA14262C7F210017CF8C /* RemoteStreamAdapter.m in Sources */,
+				D3ADEA10262C7F210017CF8C /* gst_ios_init.m in Sources */,
+				D3ADEA12262C7F210017CF8C /* RemoteStreamControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ADE9EF262B92500017CF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3ADE9F6262B92500017CF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3ADE9E9262B92500017CF8C /* RemoteStream */;
+			targetProxy = D3ADE9F5262B92500017CF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3ADE9FC262B92510017CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3ADE9FD262B92510017CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3ADE9FF262B92510017CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 82GKMR9559;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"$(HOME)/Library/Developer/GStreamer/iPhone.sdk",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(HOME)/Library/Developer/GStreamer/iPhone.sdk",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "$(HOME)/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(HOME)/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers";
+				"HEADER_SEARCH_PATHS[sdk=macosx*]" = /Library/Frameworks/GStreamer.framework/Headers;
+				INFOPLIST_FILE = RemoteStream/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					/Library/Frameworks/GStreamer.framework/Libraries,
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = (
+					"-framework",
+					GStreamer,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsmith.RemoteStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3ADEA00262B92510017CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 82GKMR9559;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"$(HOME)/Library/Developer/GStreamer/iPhone.sdk",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(HOME)/Library/Developer/GStreamer/iPhone.sdk",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "$(HOME)/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(HOME)/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers";
+				"HEADER_SEARCH_PATHS[sdk=macosx*]" = /Library/Frameworks/GStreamer.framework/Headers;
+				INFOPLIST_FILE = RemoteStream/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					/Library/Frameworks/GStreamer.framework/Libraries,
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = (
+					"-framework",
+					GStreamer,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsmith.RemoteStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3ADEA02262B92510017CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82GKMR9559;
+				INFOPLIST_FILE = RemoteStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsmith.RemoteStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3ADEA03262B92510017CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82GKMR9559;
+				INFOPLIST_FILE = RemoteStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsmith.RemoteStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3ADE9E4262B92500017CF8C /* Build configuration list for PBXProject "RemoteStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ADE9FC262B92510017CF8C /* Debug */,
+				D3ADE9FD262B92510017CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3ADE9FE262B92510017CF8C /* Build configuration list for PBXNativeTarget "RemoteStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ADE9FF262B92510017CF8C /* Debug */,
+				D3ADEA00262B92510017CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3ADEA01262B92510017CF8C /* Build configuration list for PBXNativeTarget "RemoteStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ADEA02262B92510017CF8C /* Debug */,
+				D3ADEA03262B92510017CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3ADE9E1262B92500017CF8C /* Project object */;
+}
