@@ -16,6 +16,7 @@
 		D354668826935947002BB21B /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D354668726935947002BB21B /* ConnectionView.swift */; };
 		D354668A26935953002BB21B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D354668926935953002BB21B /* Connection.swift */; };
 		D362FC0A2659B065007E0860 /* ShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D362FC092659A4D5007E0860 /* ShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3697B0A29E6118300EEAC02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D3697B0929E6118300EEAC02 /* README.md */; };
 		D3ADE9F4262B92500017CF8C /* RemoteStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ADE9EA262B92500017CF8C /* RemoteStream.framework */; };
 		D3ADE9FB262B92510017CF8C /* RemoteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D3ADE9ED262B92500017CF8C /* RemoteStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3ADEA10262C7F210017CF8C /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ADEA0A262C7F200017CF8C /* gst_ios_init.m */; platformFilter = ios; };
@@ -42,6 +43,7 @@
 		D354668726935947002BB21B /* ConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
 		D354668926935953002BB21B /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		D362FC092659A4D5007E0860 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		D3697B0929E6118300EEAC02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D3ADE9EA262B92500017CF8C /* RemoteStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ADE9ED262B92500017CF8C /* RemoteStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteStream.h; sourceTree = "<group>"; };
 		D3ADE9EE262B92500017CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		D3ADE9E0262B92500017CF8C = {
 			isa = PBXGroup;
 			children = (
+				D3697B0929E6118300EEAC02 /* README.md */,
 				D3ADEA1B262CCFB80017CF8C /* Frameworks */,
 				D3ADE9EC262B92500017CF8C /* RemoteStream */,
 				D3ADE9F7262B92500017CF8C /* RemoteStreamTests */,
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3697B0A29E6118300EEAC02 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
